@@ -15,8 +15,8 @@
             defaultOptions = {
 
             	encode: {		
-			            	inputID 	: '#inputEncode',
-			            	outputID	: '#outputEncode',
+			    inputID 	: '#inputEncode',
+			    outputID	: '#outputEncode',
                             checkedID   : '#check',
                             fooID       : '.foo',
                             fooText     : 'Encode',
@@ -25,8 +25,8 @@
 	            },
 
 	            decode: {
-	            			inputID 	: '#inputDecode',
-			            	outputID	: '#outputDecode',
+	            	    inputID 	: '#inputDecode',
+			    outputID	: '#outputDecode',
                             fooText     : 'Decode'
 	            }
 
