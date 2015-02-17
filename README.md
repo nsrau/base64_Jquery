@@ -1,1 +1,2 @@
-# base64_Jquery
+# Base64 Jquery
+base64 encode/decode plugin jquery
