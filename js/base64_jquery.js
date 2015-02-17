@@ -46,9 +46,9 @@
 
             	var $outputEncodeID = $( settings.encode.outputID );
 
-            	var $inputDecodeID	= $( settings.decode.inputID );
+            	var $inputDecodeID  = $( settings.decode.inputID );
 
-            	var $outputDecodeID	= $( settings.decode.outputID );
+            	var $outputDecodeID = $( settings.decode.outputID );
 
                 var $checkedID      = $( settings.encode.checkedID );
 
