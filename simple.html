@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>Base64 Jquery</title>
+	<!-- JQUERY CDN -->
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<!-- Plugin -->
+	<script src="js/base64_jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#inputEncode').base64();
+		});
+	</script>
+</head>
+<body>
+	<h1>Base64 Jquery</h1>
+	<input id="inputEncode" />
+	<input type="checkbox" id="check" />
+	<div id="outputEncode"></div>
+	<div class="foo"></div>
+</body>
+</html>

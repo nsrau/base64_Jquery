@@ -1,0 +1,102 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Base64 Jquery</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<!-- JQUERY CDN -->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<!-- Plugin -->
+<script src="js/base64_jquery.js"></script>
+<!-- Plugin Options -->
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+  $('.box').base64( {
+
+    encode: {
+
+      inputID   : '#inputEncode', 
+      outputID  :'#outputEncode',
+      checkedID : '#check' ,
+      fooID     : '.foo',
+      animation : true,
+      fooText   : 'Encode',
+      errorText : 'Invalid!'
+
+    },
+
+    decode: {
+
+      inputID  : '#inputDecode',
+      outputID : '#outputDecode',
+      fooText  : 'Decode'
+
+    }
+
+  });
+
+});
+
+</script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div class="title row clearfix">
+        <h3>Base64 Jquery</h3>
+  </div><!-- /title -->
+  <div class="box">
+        <!-- Encode -->
+        <div class="front">
+          <div class="input row clearfix">
+            <h4>Input:</h4>
+            <textarea id="inputEncode" placeholder="input..."></textarea>
+          </div><!-- /input -->
+          <div class="row" style="margin-top:40px;">
+            <hr>
+          </div><!-- /hr -->
+          <div class="output row">
+            <h4>Output:</h4>
+            <textarea id="outputEncode" placeholder="output..."></textarea>
+          </div><!-- /outputEncode -->
+          <div class="foo" class="row">
+          </div><!-- /fooEn -->
+        </div><!-- /front -->
+        <!-- Decode -->
+        <div class="back">
+          <div class="input row clearfix">
+            <h4>Input:</h4>
+            <textarea id="inputDecode" placeholder="input..."></textarea>
+          </div><!-- /input -->
+          <div class="row" style="margin-top:40px;">
+            <hr>
+          </div><!-- /hr -->
+          <div class="output row">
+            <h4>Output:</h4>
+            <textarea id="outputDecode" placeholder="output..."></textarea>
+          </div><!-- /outputEncode -->
+          <div class="foo" class="row">
+          </div><!-- /fooEn -->
+        </div><!-- /front -->
+  </div><!-- /box -->
+          <!-- Checbox -->
+            <div class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check"></label>
+            </div>
+</div><!-- /grid -->
+</body>
+</html>
